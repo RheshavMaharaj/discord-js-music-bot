@@ -39,10 +39,9 @@ const player = new Player(client, {
 client.events = new Collection(); // Client Events
 client.messageCommands = new Collection(); // messageCreate based commands
 client.aliases = new Collection(); // messageCreate based command aliases
-client.musicCommands = new Collection(); // Command helper collection
 
 // Requiring all handlers which in turn require commands and events
-['event-handlers', 'command-handlers', 'command-helpers', 'player-event-handler'].forEach(handler => {
+['event-handlers', 'command-handlers', 'player-event-handler'].forEach(handler => {
   require(`./handlers/${handler}`)(client, player);
 });
 

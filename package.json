@@ -1,0 +1,36 @@
+{
+  "name": "music-bot",
+  "version": "1.0.0",
+  "description": "Discord Bot built with discord.js",
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/opus": "^0.6.0",
+    "@discordjs/rest": "0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
+    "@replit/database": "^2.0.1",
+    "discord-api-types": "^0.22.0",
+    "discord-player": "^5.1.0-dev.1634688804.a0badb8",
+    "discord-together": "^1.1.62",
+    "discord.js": "^13.1.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.0",
+    "libsodium-wrappers": "^0.7.9",
+    "lyrics-finder": "^21.0.0",
+    "mongoose": "^6.0.9",
+    "node-fetch": "^2.6.5",
+    "opusscript": "0.0.8",
+    "play-dl": "^1.1.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "node": "^16.6.1",
+    "nodemon": "^2.0.13"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
